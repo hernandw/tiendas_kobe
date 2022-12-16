@@ -56,20 +56,9 @@
         text-align: center;
       }
 
-      .label {
-        font-weight: bold;
-        font-size: var(--sm);
-        margin-bottom: 8px;
-      }
+    
 
-      .input {
-        background-color: var(--text-input-field);
-        border: none;
-        border-radius: 8px;
-        height: 30px;
-        padding: 6px;
-        font-size: var(--md);
-      }
+     
 
       .form__container {
         display: flex;
@@ -93,17 +82,18 @@
         display: flex;
         justify-content: center;
         border-radius: 50%;
-        width: 150px;
-        height: 150px;
+        width: 132px;
+        height: 132px;
+        align-items: center;
       }
 
       .icon__email{
-        width: 90px;
+        width: 80px;
       }
       .email__forgot{
         color: var(--very-light-pink);
         text-align: center;
-        font-size: var(--md);
+        font-size: var(--sm);
       }
 
       .email__forgot a {
@@ -138,7 +128,7 @@
           <button type="submit" class="button-primary button-login">
             Login
           </button>
-          <p class="email__forgot">Didn't receive the email? <a href="#">Resend</a></p>
+          <p class="email__forgot"><span>Didn't receive the email?</span><a href="#">Resend</a></p>
         </form>
       </div>
     </div>
