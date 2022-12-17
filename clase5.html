@@ -23,250 +23,252 @@
         --md: 16px;
         --lg: 18px;
       }
-.card__container{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, 180px );
-    gap: 26px;
-    justify-content: center;
- }
 
- .card__product {
-    width: 180px;
- }
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Quicksand", sans-serif;
+      }
+      .card__container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 180px);
+        gap: 26px;
+        justify-content: center;
+      }
 
- .product__image {
-    width: 100%;
-    border-radius: 20px;
-    height: 180px;
-    object-fit: cover;
- }
+      .card__product {
+        width: 180px;
+      }
 
- figure {
-    margin: 0;
-    
- }
+      .product__image {
+        width: 100%;
+        border-radius: 20px;
+        height: 180px;
+        object-fit: cover;
+      }
 
- figure img {
-    width: 35px;
-    height: 35px;
- }
+      figure {
+        margin: 0;
+      }
 
- .product-info {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
- }
+      figure img {
+        width: 35px;
+        height: 35px;
+      }
 
- .product__price {
-    font-weight: bold;
-    font-size: var(--md);
-    margin-top: 0;
-    margin-bottom: 4px;
- }
+      .product-info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
 
- .product__name{
-    color: var(--very-light-pink);
-    font-size: var(--sm);
-    margin-top: 0;
-    margin-bottom: 0;
- }
+      .product__price {
+        font-weight: bold;
+        font-size: var(--md);
+        margin-top: 0;
+        margin-bottom: 4px;
+      }
 
- @media (min-width: 640px){
-    .card__container{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, 240px );
-    gap: 26px;
-    place-content: center;
- }
+      .product__name {
+        color: var(--very-light-pink);
+        font-size: var(--sm);
+        margin-top: 0;
+        margin-bottom: 0;
+      }
 
- .card__product {
-    width: 240px;
- }
+      @media (min-width: 640px) {
+        .card__container {
+          display: grid;
+          grid-template-columns: repeat(auto-fill, 240px);
+          gap: 26px;
+          place-content: center;
+        }
 
- .product__image {
-    width: 100%;
-    border-radius: 20px;
-    height: 240px;
-    object-fit: cover;
- }
+        .card__product {
+          width: 240px;
+        }
 
- .product__name {
-    font-size: var(--md);
- }
+        .product__image {
+          width: 100%;
+          border-radius: 20px;
+          height: 240px;
+          object-fit: cover;
+        }
 
- .product__price {
-    font-size: var(--lg);
- }
+        .product__name {
+          font-size: var(--md);
+        }
 
- }
-      
+        .product__price {
+          font-size: var(--lg);
+        }
+      }
     </style>
     <title>Kobe Shop</title>
   </head>
   <body>
     <section class="main-section">
       <div class="card__container">
-        
-          <div class="card__product">
-            <img
-              class="product__image"
-              src="./assets/images/blusas/295560932_778979743233538_185955359791984085_n.webp"
-              alt=""
-            />
-            <div class="product-info">
-                <div>
-                    <p class="product__price">$10</p>
-                    <p class="product__name">Blusa X</p>
-                  </div>
-                  <figure>
-                    <img src="./assets/icons/bt_add_to_cart.svg" alt="" />
-                  </figure>
+        <div class="card__product">
+          <img
+            class="product__image"
+            src="./assets/images/blusas/295560932_778979743233538_185955359791984085_n.webp"
+            alt=""
+          />
+          <div class="product-info">
+            <div>
+              <p class="product__price">$10</p>
+              <p class="product__name">Blusa X</p>
             </div>
+            <figure>
+              <img src="./assets/icons/bt_add_to_cart.svg" alt="" />
+            </figure>
           </div>
-          <div class="card__product">
-            <img
-              class="product__image"
-              src="./assets/images/blusas/298704855_1221544621979887_3183945203523051853_n.webp"
-              alt=""
-            />
-            <div class="product-info">
-                <div>
-                    <p class="product__price">$10</p>
-                    <p class="product__name">Blusa X</p>
-                  </div>
-                  <figure>
-                    <img src="./assets/icons/bt_add_to_cart.svg" alt="" />
-                  </figure>
+        </div>
+        <div class="card__product">
+          <img
+            class="product__image"
+            src="./assets/images/blusas/298704855_1221544621979887_3183945203523051853_n.webp"
+            alt=""
+          />
+          <div class="product-info">
+            <div>
+              <p class="product__price">$10</p>
+              <p class="product__name">Blusa X</p>
             </div>
+            <figure>
+              <img src="./assets/icons/bt_add_to_cart.svg" alt="" />
+            </figure>
           </div>
-          <div class="card__product">
-            <img
-              class="product__image"
-              src="./assets/images/blusas/298547308_1120556871895580_1501991367355774541_n.webp"
-              alt=""
-            />
-            <div class="product-info">
-                <div>
-                    <p class="product__price">$10</p>
-                    <p class="product__name">Blusa X</p>
-                  </div>
-                  <figure>
-                    <img src="./assets/icons/bt_add_to_cart.svg" alt="" />
-                  </figure>
+        </div>
+        <div class="card__product">
+          <img
+            class="product__image"
+            src="./assets/images/blusas/298547308_1120556871895580_1501991367355774541_n.webp"
+            alt=""
+          />
+          <div class="product-info">
+            <div>
+              <p class="product__price">$10</p>
+              <p class="product__name">Blusa X</p>
             </div>
+            <figure>
+              <img src="./assets/icons/bt_add_to_cart.svg" alt="" />
+            </figure>
           </div>
-          <div class="card__product">
-            <img
-              class="product__image"
-              src="./assets/images/blusas/298688930_755782142201716_1424929170547578041_n.webp"
-              alt=""
-            />
-            <div class="product-info">
-                <div>
-                    <p class="product__price">$10</p>
-                    <p class="product__name">Blusa X</p>
-                  </div>
-                  <figure>
-                    <img src="./assets/icons/bt_add_to_cart.svg" alt="" />
-                  </figure>
+        </div>
+        <div class="card__product">
+          <img
+            class="product__image"
+            src="./assets/images/blusas/298688930_755782142201716_1424929170547578041_n.webp"
+            alt=""
+          />
+          <div class="product-info">
+            <div>
+              <p class="product__price">$10</p>
+              <p class="product__name">Blusa X</p>
             </div>
+            <figure>
+              <img src="./assets/icons/bt_add_to_cart.svg" alt="" />
+            </figure>
           </div>
-          <div class="card__product">
-            <img
-              class="product__image"
-              src="./assets/images/blusas/299327229_387915529943851_5366369589836518095_n.webp"
-              alt=""
-            />
-            <div class="product-info">
-                <div>
-                    <p class="product__price">$10</p>
-                    <p class="product__name">Blusa X</p>
-                  </div>
-                  <figure>
-                    <img src="./assets/icons/bt_add_to_cart.svg" alt="" />
-                  </figure>
+        </div>
+        <div class="card__product">
+          <img
+            class="product__image"
+            src="./assets/images/blusas/299327229_387915529943851_5366369589836518095_n.webp"
+            alt=""
+          />
+          <div class="product-info">
+            <div>
+              <p class="product__price">$10</p>
+              <p class="product__name">Blusa X</p>
             </div>
+            <figure>
+              <img src="./assets/icons/bt_add_to_cart.svg" alt="" />
+            </figure>
           </div>
-          <div class="card__product">
-            <img
-              class="product__image"
-              src="./assets/images/blusas/299122303_1130143204524741_6154636218172177359_n.webp"
-              alt=""
-            />
-            <div class="product-info">
-                <div>
-                    <p class="product__price">$10</p>
-                    <p class="product__name">Blusa X</p>
-                  </div>
-                  <figure>
-                    <img src="./assets/icons/bt_add_to_cart.svg" alt="" />
-                  </figure>
+        </div>
+        <div class="card__product">
+          <img
+            class="product__image"
+            src="./assets/images/blusas/299122303_1130143204524741_6154636218172177359_n.webp"
+            alt=""
+          />
+          <div class="product-info">
+            <div>
+              <p class="product__price">$10</p>
+              <p class="product__name">Blusa X</p>
             </div>
+            <figure>
+              <img src="./assets/icons/bt_add_to_cart.svg" alt="" />
+            </figure>
           </div>
-          <div class="card__product">
-            <img
-              class="product__image"
-              src="./assets/images/blusas/298794152_105042122270224_6286121474671587556_n.webp"
-              alt=""
-            />
-            <div class="product-info">
-                <div>
-                    <p class="product__price">$10</p>
-                    <p class="product__name">Blusa X</p>
-                  </div>
-                  <figure>
-                    <img src="./assets/icons/bt_add_to_cart.svg" alt="" />
-                  </figure>
+        </div>
+        <div class="card__product">
+          <img
+            class="product__image"
+            src="./assets/images/blusas/298794152_105042122270224_6286121474671587556_n.webp"
+            alt=""
+          />
+          <div class="product-info">
+            <div>
+              <p class="product__price">$10</p>
+              <p class="product__name">Blusa X</p>
             </div>
+            <figure>
+              <img src="./assets/icons/bt_add_to_cart.svg" alt="" />
+            </figure>
           </div>
-          <div class="card__product">
-            <img
-              class="product__image"
-              src="./assets/images/blusas/298753883_125482326890611_7872018069092673500_n.webp"
-              alt=""
-            />
-            <div class="product-info">
-                <div>
-                    <p class="product__price">$10</p>
-                    <p class="product__name">Blusa X</p>
-                  </div>
-                  <figure>
-                    <img src="./assets/icons/bt_add_to_cart.svg" alt="" />
-                  </figure>
+        </div>
+        <div class="card__product">
+          <img
+            class="product__image"
+            src="./assets/images/blusas/298753883_125482326890611_7872018069092673500_n.webp"
+            alt=""
+          />
+          <div class="product-info">
+            <div>
+              <p class="product__price">$10</p>
+              <p class="product__name">Blusa X</p>
             </div>
+            <figure>
+              <img src="./assets/icons/bt_add_to_cart.svg" alt="" />
+            </figure>
           </div>
-          <div class="card__product">
-            <img
-              class="product__image"
-              src="./assets/images/blusas/309414520_1297438217750833_4726051445296664449_n.webp"
-              alt=""
-            />
-            <div class="product-info">
-                <div>
-                    <p class="product__price">$10</p>
-                    <p class="product__name">Blusa X</p>
-                  </div>
-                  <figure>
-                    <img src="./assets/icons/bt_add_to_cart.svg" alt="" />
-                  </figure>
+        </div>
+        <div class="card__product">
+          <img
+            class="product__image"
+            src="./assets/images/blusas/309414520_1297438217750833_4726051445296664449_n.webp"
+            alt=""
+          />
+          <div class="product-info">
+            <div>
+              <p class="product__price">$10</p>
+              <p class="product__name">Blusa X</p>
             </div>
+            <figure>
+              <img src="./assets/icons/bt_add_to_cart.svg" alt="" />
+            </figure>
           </div>
-          <div class="card__product">
-            <img
-              class="product__image"
-              src="./assets/images/blusas/309431477_415561680659706_2258555334824791960_n.webp"
-              alt=""
-            />
-            <div class="product-info">
-                <div>
-                    <p class="product__price">$10</p>
-                    <p class="product__name">Blusa X</p>
-                  </div>
-                  <figure>
-                    <img src="./assets/icons/bt_add_to_cart.svg" alt="" />
-                  </figure>
+        </div>
+        <div class="card__product">
+          <img
+            class="product__image"
+            src="./assets/images/blusas/309431477_415561680659706_2258555334824791960_n.webp"
+            alt=""
+          />
+          <div class="product-info">
+            <div>
+              <p class="product__price">$10</p>
+              <p class="product__name">Blusa X</p>
             </div>
+            <figure>
+              <img src="./assets/icons/bt_add_to_cart.svg" alt="" />
+            </figure>
           </div>
+        </div>
       </div>
     </section>
   </body>
