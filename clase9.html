@@ -17,22 +17,26 @@
         --md: 16px;
         --lg: 18px;
       }
-
       body {
         margin: 0;
         padding: 0;
         font-family: "Quicksand", sans-serif;
       }
+
       .my-order-container {
         padding: 20px;
       }
-      .my-order-content {
-        background-color: var(--text-input-field);
-        border-radius: 8px;
-        padding: 0 20px;
-        display: flex;
-        justify-content: space-between;
+
+      .order {
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        gap: 16px;
+        margin-bottom: 12px;
         align-items: center;
+      }
+      .my-order-content {
+        display: flex;
+        flex-direction: column;
       }
 
       .product-price {
@@ -46,27 +50,26 @@
       .count-articles {
         color: var(--very-light-pink);
       }
-      .cart-image {
-        width: 70px;
-        height: 70px;
-        object-fit: cover;
-        border-radius: 10px;
-      }
-      .cart_product {
+
+      .order p:nth-child(1) {
         display: flex;
-        gap: 20px;
-        align-items: center;
-        color: var(--very-light-pink);
-      }
-      .shopping-cart {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding-right: 20px;
-        padding: 20px 20px 0 0;
+        flex-direction: column;
       }
 
-      .cart-price {
+      .my-order p {
+        display: flex;
+        flex-direction: column;
+      }
+      .order p span:nth-child(1) {
+        font-size: var(--md);
+        font-weight: bold;
+      }
+      .order p span:nth-child(2) {
+        font-size: var(--sm);
+        color: var(--very-light-pink);
+      }
+      .order p:nth-child(2) {
+        text-align: end;
         font-weight: bold;
       }
 
@@ -82,67 +85,55 @@
       <div class="my-order-container">
         <h1 class="title">My order</h1>
         <div class="my-order-content">
-          <div>
-            <p class="date-product">04.25.2021</p>
-            <p class="count-articles">6 articles</p>
+          <div class="order">
+            <p>
+              <span class="date-product">04.25.2021</span>
+              <span class="count-articles">6 articles</span>
+            </p>
+            <p class="product-price">$560</p>
+            <img src="./assets/icons/flechita.svg" alt="arrow" />
           </div>
-          <p class="product-price">$560</p>
         </div>
-        <div class="shopping-cart">
-          <div class="cart_product">
-            <img
-              class="cart-image"
-              src="./assets/images/blusas/295560932_778979743233538_185955359791984085_n.webp"
-              alt=""
-            />
-            <p>Blusa X</p>
+        <div class="my-order-content">
+          <div class="order">
+            <p>
+              <span class="date-product">04.25.2021</span>
+              <span class="count-articles">6 articles</span>
+            </p>
+            <p class="product-price">$560</p>
+            <img src="./assets/icons/flechita.svg" alt="arrow" />
           </div>
-          <p class="cart-price">$120</p>
         </div>
-        <div class="shopping-cart">
-            <div class="cart_product">
-              <img
-                class="cart-image"
-                src="./assets/images/blusas/295560932_778979743233538_185955359791984085_n.webp"
-                alt=""
-              />
-              <p>Blusa X</p>
-            </div>
-            <p class="cart-price">$120</p>
+        <div class="my-order-content">
+          <div class="order">
+            <p>
+              <span class="date-product">04.25.2021</span>
+              <span class="count-articles">6 articles</span>
+            </p>
+            <p class="product-price">$560</p>
+            <img src="./assets/icons/flechita.svg" alt="arrow" />
           </div>
-          <div class="shopping-cart">
-            <div class="cart_product">
-              <img
-                class="cart-image"
-                src="./assets/images/blusas/295560932_778979743233538_185955359791984085_n.webp"
-                alt=""
-              />
-              <p>Blusa X</p>
-            </div>
-            <p class="cart-price">$120</p>
+        </div>
+        <div class="my-order-content">
+          <div class="order">
+            <p>
+              <span class="date-product">04.25.2021</span>
+              <span class="count-articles">6 articles</span>
+            </p>
+            <p class="product-price">$560</p>
+            <img src="./assets/icons/flechita.svg" alt="arrow" />
           </div>
-          <div class="shopping-cart">
-            <div class="cart_product">
-              <img
-                class="cart-image"
-                src="./assets/images/blusas/295560932_778979743233538_185955359791984085_n.webp"
-                alt=""
-              />
-              <p>Blusa X</p>
-            </div>
-            <p class="cart-price">$120</p>
+        </div>
+        <div class="my-order-content">
+          <div class="order">
+            <p>
+              <span class="date-product">04.25.2021</span>
+              <span class="count-articles">6 articles</span>
+            </p>
+            <p class="product-price">$560</p>
+            <img src="./assets/icons/flechita.svg" alt="arrow" />
           </div>
-          <div class="shopping-cart">
-            <div class="cart_product">
-              <img
-                class="cart-image"
-                src="./assets/images/blusas/295560932_778979743233538_185955359791984085_n.webp"
-                alt=""
-              />
-              <p>Blusa X</p>
-            </div>
-            <p class="cart-price">$120</p>
-          </div>
+        </div>
       </div>
     </div>
   </body>
