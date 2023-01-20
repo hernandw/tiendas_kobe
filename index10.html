@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tiendas Kobe</title>
+    <style>
+      :root {
+        --very-light-pink: #c7c7c7;
+        --white: #fff;
+        --black: #000;
+        --text-input-field: #f7f7f7;
+
+        --hospital-purple: #9a081d;
+        --sm: 14px;
+        --md: 16px;
+        --lg: 18px;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Quicksand", sans-serif;
+      }
+
+      .my-order-container {
+        padding: 20px;
+      }
+
+      .order {
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        gap: 16px;
+        margin-bottom: 12px;
+        align-items: center;
+      }
+      .my-order-content {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .product-price {
+        font-weight: bold;
+      }
+
+      .date-product {
+        font-weight: bold;
+      }
+
+      .count-articles {
+        color: var(--very-light-pink);
+      }
+
+      .order p:nth-child(1) {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .my-order p {
+        display: flex;
+        flex-direction: column;
+      }
+      .order p span:nth-child(1) {
+        font-size: var(--md);
+        font-weight: bold;
+      }
+      .order p span:nth-child(2) {
+        font-size: var(--sm);
+        color: var(--very-light-pink);
+      }
+      .order p:nth-child(2) {
+        text-align: end;
+        font-weight: bold;
+      }
+
+      .title {
+        font: var(--lg);
+        margin-bottom: 40px;
+        font-weight: bold;
+      }
+      .nabvar-left_menu {
+        display: none;
+      }
+
+      .nabvar-email {
+        display: none;
+      }
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid var(--very-light-pink);
+        padding: 0 20px;
+      }
+
+      .nabvar-email {
+        color: var(--very-light-pink);
+        font-size: var(--sm);
+      }
+      .navbar-right {
+        position: relative;
+      }
+      .navbar-right ul {
+        list-style-type: none;
+      }
+
+      .navbar-right div {
+        width: 16px;
+        height: 16px;
+        background-color: var(--hospital-purple);
+        border-radius: 50%;
+        font-size: var(--sm);
+        font-weight: bold;
+        position: absolute;
+        top: 10px;
+        right: -3px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .logo {
+        width: 100px;
+      }
+
+      @media (min-width: 640px) {
+nav {
+    justify-content: space-between;
+    padding: 0 50px;
+}
+
+        .menu {
+          display: none;
+        }
+
+        .navbar-left {
+          display: flex;
+        }
+        .navbar-right ul,
+        .navbar-left ul {
+          list-style-type: none;
+          padding: 0;
+          margin: 0;
+          display: flex;
+          align-items: center;
+          height: 60px;
+        }
+
+        .nabvar-left_menu {
+          display: block;
+        }
+
+        .nabvar-email {
+          display: block;
+          margin-right: 14px;
+        }
+
+        .nabvar-email img {
+          margin-left: 4px;
+          transform: rotate(90deg);
+        }
+
+        .navbar-left ul li a,
+        .navbar-right ul li a {
+          text-decoration: none;
+          color: var(--very-light-pink);
+          border: 1px solid var(--white);
+          padding: 8px;
+          border-radius: 8px;
+        }
+
+        .navbar-left ul li a:hover,
+        .navbar-right ul li a:hover {
+          border: 1px solid var(--hospital-purple);
+          color: var(--hospital-purple);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <img class="menu" src="./assets/icons/icon_menu.svg" alt="menu" />
+
+      <div class="navbar-left">
+        <img class="logo" src="./assets/logos/logo_yard_sale.svg" alt="logo" />
+        <ul class="nabvar-left_menu">
+          <li><a href="/">All</a></li>
+          <li><a href="/">Clothes</a></li>
+          <li><a href="/">Electronics</a></li>
+          <li><a href="/">Furnitures</a></li>
+          <li><a href="/">Toys</a></li>
+          <li><a href="/">Others</a></li>
+        </ul>
+      </div>
+      <div class="navbar-right">
+        <ul>
+          <li class="nabvar-email">
+            tiendaskobe@gmail.com
+            <img src="./assets/icons/flechita.svg" alt="" />
+          </li>
+
+          <li>
+            <img
+              class="navbar-shopping-cart"
+              src="./assets/icons/icon_shopping_cart.svg"
+              alt="Shoppping Cart"
+            />
+            <div class="number">2</div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </body>
+</html>
