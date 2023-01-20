@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My orders</title>
+    <style>
+      :root {
+        --very-light-pink: #c7c7c7;
+        --white: #fff;
+        --black: #000;
+        --text-input-field: #f7f7f7;
+
+        --hospital-purple: #9a081d;
+        --sm: 14px;
+        --md: 16px;
+        --lg: 18px;
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Quicksand", sans-serif;
+      }
+      .my-order-container {
+        padding: 20px;
+      }
+      .my-order-content {
+        background-color: var(--text-input-field);
+        border-radius: 8px;
+        padding: 20px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 20px;
+      }
+
+      .product-price {
+        font-weight: bold;
+      }
+
+      .date-product {
+        font-weight: bold;
+      }
+
+      .count-articles {
+        color: var(--very-light-pink);
+      }
+      .cart-image {
+        width: 70px;
+        height: 70px;
+        object-fit: cover;
+        border-radius: 10px;
+      }
+      .cart_product {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        color: var(--very-light-pink);
+      }
+      .shopping-cart {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+        padding-top: 20px;
+      }
+
+      .cart-price {
+        font-weight: bold;
+      }
+
+      .title {
+        font: var(--lg);
+        margin-bottom: 40px;
+        font-weight: bold;
+      }
+      .button-primary {
+        background-color: var(--hospital-purple);
+        color: var(--white);
+        border: none;
+        width: 100%;
+        border-radius: 8px;
+        padding: 20px;
+        font-size: var(--md);
+        margin-top: 20px;
+        cursor: pointer;
+        font-weight: bold;
+      }
+
+      .price-x {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="my-order">
+      <div class="my-order-container">
+        <h1 class="title">My order</h1>
+        
+        <div class="shopping-cart">
+          <div class="cart_product">
+            <img
+              class="cart-image"
+              src="./assets/images/blusas/295560932_778979743233538_185955359791984085_n.webp"
+              alt=""
+            />
+            <p>Blusa X</p>
+          </div>
+          <div class="price-x">
+            <p class="cart-price">$120</p>
+          <img src="./assets/icons/icon_close.png" alt="close" />
+          </div>
+        </div>
+        <div class="shopping-cart">
+          <div class="cart_product">
+            <img
+              class="cart-image"
+              src="./assets/images/blusas/295560932_778979743233538_185955359791984085_n.webp"
+              alt=""
+            />
+            <p>Blusa X</p>
+          </div>
+          <div class="price-x">
+            <p class="cart-price">$120</p>
+          <img src="./assets/icons/icon_close.png" alt="close" />
+          </div>
+        </div>
+        <div class="shopping-cart">
+          <div class="cart_product">
+            <img
+              class="cart-image"
+              src="./assets/images/blusas/295560932_778979743233538_185955359791984085_n.webp"
+              alt=""
+            />
+            <p>Blusa X</p>
+          </div>
+          <div class="price-x">
+            <p class="cart-price">$120</p>
+          <img src="./assets/icons/icon_close.png" alt="close" />
+          </div>
+        </div>
+          <div class="shopping-cart">
+            <div class="cart_product">
+              <img
+                class="cart-image"
+                src="./assets/images/blusas/295560932_778979743233538_185955359791984085_n.webp"
+                alt=""
+              />
+              <p>Blusa X</p>
+            </div>
+            <div class="price-x">
+              <p class="cart-price">$120</p>
+            <img src="./assets/icons/icon_close.png" alt="close" />
+            </div>
+          </div>
+          <div class="shopping-cart">
+            <div class="cart_product">
+              <img
+                class="cart-image"
+                src="./assets/images/blusas/295560932_778979743233538_185955359791984085_n.webp"
+                alt=""
+              />
+              <p>Blusa X</p>
+            </div>
+            <div class="price-x">
+              <p class="cart-price">$120</p>
+            <img src="./assets/icons/icon_close.png" alt="close" />
+            </div>
+          </div>
+          <div class="my-order-content">
+            <div>
+              <p class="date-product">Total</p>
+              
+            </div>
+            <p class="product-price">$560</p>
+          </div>
+          <button type="submit" class="button-primary button-create-account">
+            Checkout
+          </button>
+      </div>
+      
+    </div>
+  </body>
+</html>
